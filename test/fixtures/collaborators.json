@@ -1,0 +1,38 @@
+[
+  {
+    "login": "bar",
+    "name": "Bar User",
+    "email": "bar@example.com",
+    "type": "TSC"
+  },
+  {
+    "login": "Baz",
+    "name": "Baz User",
+    "email": "baz@example.com",
+    "type": "COLLABORATOR"
+  },
+  {
+    "login": "foo",
+    "name": "Foo User",
+    "email": "foo@example.com",
+    "type": "COLLABORATOR"
+  },
+  {
+    "login": "Quo",
+    "name": "Quo User",
+    "email": "quo@example.com",
+    "type": "COLLABORATOR"
+  },
+  {
+    "login": "Quux",
+    "name": "Quux User",
+    "email": "quux@example.com",
+    "type": "COLLABORATOR"
+  },
+  {
+    "login": "ExtraSpace",
+    "name": "Extra Space",
+    "email": "extraspace@example.com",
+    "type": "COLLABORATOR"
+  }
+]

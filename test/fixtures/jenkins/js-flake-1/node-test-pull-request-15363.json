@@ -1,0 +1,172 @@
+{
+  "_class": "com.tikal.jenkins.plugins.multijob.MultiJobBuild",
+  "builtOn": "test-softlayer-ubuntu1604-x64-1",
+  "actions": [
+    {
+      "_class": "hudson.model.ParametersAction",
+      "parameters": [
+        {
+          "_class": "hudson.model.BooleanParameterValue",
+          "name": "CERTIFY_SAFE",
+          "value": true
+        },
+        {
+          "_class": "hudson.model.StringParameterValue",
+          "name": "TARGET_GITHUB_ORG",
+          "value": "nodejs"
+        },
+        {
+          "_class": "hudson.model.StringParameterValue",
+          "name": "TARGET_REPO_NAME",
+          "value": "node"
+        },
+        {
+          "_class": "hudson.model.StringParameterValue",
+          "name": "PR_ID",
+          "value": "21227"
+        },
+        {
+          "_class": "hudson.model.BooleanParameterValue",
+          "name": "POST_STATUS_TO_PR",
+          "value": true
+        },
+        {
+          "_class": "hudson.model.StringParameterValue",
+          "name": "REBASE_ONTO",
+          "value": "<pr base branch>"
+        }
+      ]
+    },
+    {
+      "_class": "hudson.model.CauseAction"
+    },
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData"
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {
+      "_class": "hudson.plugins.parameterizedtrigger.BuildInfoExporterAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "hudson.tasks.test.AggregatedTestResultPublisher$TestResultAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "number": 15363,
+  "result": "FAILURE",
+  "url": "https://ci.nodejs.org/job/node-test-pull-request/15363/",
+  "changeSet": {
+    "_class": "hudson.plugins.git.GitChangeSetList",
+    "items": [
+      {
+        "_class": "hudson.plugins.git.GitChangeSet",
+        "commitId": "44a6095e52ceed26ab33a74206a3ec988c331ac6",
+        "author": {
+          "absoluteUrl": "https://ci.nodejs.org/user/trott",
+          "fullName": "Rich Trott"
+        },
+        "authorEmail": "rtrott@gmail.com",
+        "date": "2018-06-08 23:04:02 -0700",
+        "msg": "test: move inspector-stress-http to sequential"
+      }
+    ]
+  },
+  "subBuilds": [
+    {
+      "build": {
+        "_class": "com.tikal.jenkins.plugins.multijob.MultiJobBuild",
+        "subBuilds": [
+          {
+            "buildNumber": 18270,
+            "jobName": "node-test-commit-plinux",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-plinux/18270/"
+          },
+          {
+            "buildNumber": 18253,
+            "jobName": "node-test-commit-smartos",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-smartos/18253/"
+          },
+          {
+            "buildNumber": 5041,
+            "jobName": "node-test-commit-linux-containered",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-linux-containered/5041/"
+          },
+          {
+            "buildNumber": 19446,
+            "jobName": "node-test-commit-linux",
+            "result": "FAILURE",
+            "url": "job/node-test-commit-linux/19446/"
+          },
+          {
+            "buildNumber": 15659,
+            "jobName": "node-test-commit-aix",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-aix/15659/"
+          },
+          {
+            "buildNumber": 18377,
+            "jobName": "node-test-commit-freebsd",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-freebsd/18377/"
+          },
+          {
+            "buildNumber": 19182,
+            "jobName": "node-test-commit-osx",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-osx/19182/"
+          },
+          {
+            "buildNumber": 16726,
+            "jobName": "node-test-commit-arm",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-arm/16726/"
+          },
+          {
+            "buildNumber": 2059,
+            "jobName": "node-test-commit-linuxone",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-linuxone/2059/"
+          },
+          {
+            "buildNumber": 19879,
+            "jobName": "node-test-linter",
+            "result": "SUCCESS",
+            "url": "job/node-test-linter/19879/"
+          },
+          {
+            "buildNumber": 18633,
+            "jobName": "node-test-commit-windows-fanned",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-windows-fanned/18633/"
+          },
+          {
+            "buildNumber": 1830,
+            "jobName": "node-test-commit-arm-fanned",
+            "result": "SUCCESS",
+            "url": "job/node-test-commit-arm-fanned/1830/"
+          }
+        ]
+      },
+      "buildNumber": 19123,
+      "jobName": "node-test-commit",
+      "result": "FAILURE",
+      "url": "job/node-test-commit/19123/"
+    }
+  ]
+}
